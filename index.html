@@ -125,6 +125,45 @@
             color: black;
             text-decoration: none;
         }
+
+        .watch-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        .watch-button {
+            background-color: #f4f4f4;
+            border: 0;
+            border-radius: 15px;
+            height: 300px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .watch-button img {
+            mix-blend-mode: multiply;
+            width: 250px;
+            height: 200px;
+        }
+
+        .watch-button h2 {
+            font-size: 15px;
+        }
+
+        .watch-button p {
+            color: blue;
+            font-weight: 550;
+        }
+
+        .watch-button .small-text {
+            font-size: 10px;
+        }
     </style>
 </head>
 
@@ -232,28 +271,44 @@
     <div class="latest-offers">
         Shop all latest offers and innovations
     </div>
-<center style="font-size: 20px; margin-top: 10px;">
-    <a href="https://www.samsung.com/us/shop/all-deals/" style="color: black;" >View all offers</a> 
-</center>
+    <center style="font-size: 20px; margin-top: 10px;">
+        <a href="https://www.samsung.com/us/shop/all-deals/" style="color: black;">View all offers</a>
+    </center>
 
-<div class="center-heading">
-    <div><a href="#">For You</a></div>
-    <div><a href="#">Mobile</a></div>
-    <div><a href="#">TV & Audio</a></div>
-    <div><a href="#">Computing</a></div>
-    <div><a href="#">4th of July Sales</a></div>
-</div>
-<div style="display:flex; gap: 45px; justify-content: center; margin-top: 30px;">
-    <a href="https://image-us.samsung.com/us/watches/galaxy-watch6/graphite/R930-graphite/1.jpg?$product-card-small-jpg$">
-      <button style="background-color: #f4f4f4; border: 0; border-radius: 15px; height: 300px; width: 400px;">
-        <img style="mix-blend-mode: multiply; width: 250px; height: 200px;" src="https://image-us.samsung.com/us/watches/galaxy-watch6/graphite/R930-graphite/1.jpg?$product-card-small-jpg$" alt="Galaxy S24 Plus">
-        <h2 style="font-size: 15px;">Galaxy Watch6, 40mm</h2>
-        <p style="color: blue; font-weight: 550;">Save up to $340</p>
-        <p style="font-size: 10px;">From $209.99 before eligible trade-in.</p>
-      </button>
-    </a>
-  </div>
-  
+    <div class="center-heading">
+        <div><a href="#">For You</a></div>
+        <div><a href="#">Mobile</a></div>
+        <div><a href="#">TV & Audio</a></div>
+        <div><a href="#">Computing</a></div>
+        <div><a href="#">4th of July Sales</a></div>
+    </div>
+
+    <div class="watch-container">
+        <a href="https://image-us.samsung.com/us/watches/galaxy-watch6/graphite/R930-graphite/1.jpg?$product-card-small-jpg$">
+            <button class="watch-button">
+                <img src="https://image-us.samsung.com/us/watches/galaxy-watch6/graphite/R930-graphite/1.jpg?$product-card-small-jpg$" alt="Watch">
+                <h2>Galaxy Watch6, 40mm</h2>
+                <p>Save up to $340</p>
+                <p class="small-text">From $209.99 before eligible trade-in.</p>
+            </button>
+        </a>
+        <a href="https://www.samsung.com/us/home-appliances/vacuums/jet-stick/samsung-jet--60-pet-cordless-stick-vacuum-vs15a6032r7-aa/">
+            <button class="watch-button">
+                <img src="https://image-us.samsung.com/SamsungUS/home/home-appliances/vacuums/pdp/stick/VS15A6032R7_01_RoseGold_SCOM.jpg?$product-card-small-jpg$" alt="Watch">
+                <h2>Jet 60 Pet Cordless Stick Vacuum</h2>
+                <p>Save $130</p>
+                <p class="small-text">From $199.99</p>
+            </button>
+        </a>
+        <a href="https://www.samsung.com/us/computing/galaxy-books/galaxy-book4-series/buy/galaxy-book4-pro-360-16-intel-core-ultra-7-1tb-moonstone-gray-np960qgk-kg1us/?modelCode=NP960QGK-KG1US">
+            <button class="watch-button">
+                <img src="https://image-us.samsung.com/SamsungUS/home/computing/galaxy-books/gp4-16-360-pro/GB4_Pro_360_16_US_Copilot_Moonstone-Gray_001_Front-1600x1200.jpg?$product-card-small-jpg$" alt="Laptop">
+                <h2>Galaxy Book4 Pro 360, 16"</h2>
+                <p style="color: black;">From $1399.99</p>
+            </button>
+        </a>
+    </div>
+
 </body>
 
 </html>
