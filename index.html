@@ -9,7 +9,7 @@
     <style>
         .heading {
             margin-top: 21px;
-            left: 55px;
+            left: 20px;
             margin-left: 15px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             vertical-align: top;
@@ -20,7 +20,7 @@
         }
 
         .heading a {
-            margin: 0 1px;
+            margin: 0 5px;
             text-decoration: none;
             color: black;
         }
@@ -29,21 +29,25 @@
             position: absolute;
             top: 100%;
             left: 0;
-            background-color: #fff;
+            background-color: rgba(0, 0, 0, 0.5); 
             display: none;
             z-index: 1;
+            width: 1000px;
+            height: 590px;
+            margin-top: 15px;
         }
 
         .dropdown a {
             display: block;
             padding: 10px 20px;
             text-decoration: none;
-            color: black;
+            color: white; 
         }
 
         .heading:hover .dropdown {
             display: block;
         }
+
 
         .heading-container {
             display: flex;
@@ -83,6 +87,7 @@
             align-items: center;
             color: white;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: -20px;
         }
 
         .exclusive-offer {
@@ -100,6 +105,7 @@
             border-radius: 5px;
             font-size: 16px;
             margin-top: 10px;
+            border-radius: 50px;
         }
 
         .reserve-button:hover {
@@ -126,14 +132,14 @@
             text-decoration: none;
         }
 
-        .watch-container {
+        .widget-container {
             display: flex;
             justify-content: space-between;
             margin-top: 30px;
             margin-left: 10px;
         }
 
-        .watch-button {
+        .widget-button {
             background-color: #f4f4f4;
             border: 0;
             border-radius: 15px;
@@ -144,26 +150,49 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            text-decoration: none;
+            color: black;
         }
 
-        .watch-button img {
+        .widget-button img {
             mix-blend-mode: multiply;
-            width: 250px;
+            width: 200px;
             height: 200px;
         }
 
-        .watch-button h2 {
+        .widget-button h2 {
             font-size: 15px;
         }
 
-        .watch-button p {
+        .widget-button p {
             color: blue;
             font-weight: 550;
         }
 
-        .watch-button .small-text {
+        .widget-button .small-text {
             font-size: 10px;
         }
+        .heading:hover { 
+            background-color: black; 
+            padding: 5px;
+            border-radius: 20px;
+        }
+        .heading:hover a{
+            color: white;
+        }
+        .heading:hover .dropdown a {
+            background-color: white; 
+            color: black;
+            height: 100px;
+        }
+        .ad-offer-img {
+            position: relative; 
+            bottom: 0; 
+            margin-left: -100px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+        }        
     </style>
 </head>
 
@@ -171,7 +200,7 @@
 
     <div class="header">
         <div>
-            <a href="https://www.samsung.com/us/"><img src="logo.svg"></a>
+            <a href="https://www.samsung.com/us/"><img src="logo.svg" alt="Samsung Logo"></a>
         </div>
         <div class="heading-container">
             <div class="heading-row">
@@ -241,7 +270,7 @@
                 </div>
             </div>
 
-            <div class="heading">
+            <div class="heading-row">
                 <div class="heading">
                     <a href="#">Explore</a>
                     <div class="dropdown" style="left: 90px;">
@@ -283,32 +312,48 @@
         <div><a href="#">4th of July Sales</a></div>
     </div>
 
-    <div class="watch-container">
-        <a href="https://image-us.samsung.com/us/watches/galaxy-watch6/graphite/R930-graphite/1.jpg?$product-card-small-jpg$">
-            <button class="watch-button">
-                <img src="https://image-us.samsung.com/us/watches/galaxy-watch6/graphite/R930-graphite/1.jpg?$product-card-small-jpg$" alt="Watch">
-                <h2>Galaxy Watch6, 40mm</h2>
-                <p>Save up to $340</p>
-                <p class="small-text">From $209.99 before eligible trade-in.</p>
-            </button>
+    <div class="widget-container">
+        <a href="https://www.samsung.com/us/watches/galaxy-watch6/buy/galaxy-watch6-40mm-graphite-lte-verizon-sm-r935uzkvxaa/?modelCode=SM-R930NZKAXAA" class="widget-button">
+            <img src="https://image-us.samsung.com/us/watches/galaxy-watch6/graphite/R930-graphite/1.jpg?$product-card-small-jpg$" alt="Watch">
+            <h2>Galaxy Watch6, 40mm</h2>
+            <p style="color: black;">Save up to $340</p>
+            <p class="small-text">From $209.99 before eligible trade-in.</p>
         </a>
-        <a href="https://www.samsung.com/us/home-appliances/vacuums/jet-stick/samsung-jet--60-pet-cordless-stick-vacuum-vs15a6032r7-aa/">
-            <button class="watch-button">
-                <img src="https://image-us.samsung.com/SamsungUS/home/home-appliances/vacuums/pdp/stick/VS15A6032R7_01_RoseGold_SCOM.jpg?$product-card-small-jpg$" alt="Watch">
-                <h2>Jet 60 Pet Cordless Stick Vacuum</h2>
-                <p>Save $130</p>
-                <p class="small-text">From $199.99</p>
-            </button>
+        <a href="https://www.samsung.com/us/home-appliances/vacuums/jet-stick/samsung-jet--60-pet-cordless-stick-vacuum-vs15a6032r7-aa/" class="widget-button">
+            <img src="https://image-us.samsung.com/SamsungUS/home/home-appliances/vacuums/pdp/stick/VS15A6032R7_01_RoseGold_SCOM.jpg?$product-card-small-jpg$" alt="Widget">
+            <h2>Jet 60 Pet Cordless Stick Vacuum</h2>
+            <p style="color: black; font-size: 14px;">Save $130</p>
+            <p style="font-size: 12px;">From $199.99</p>
         </a>
-        <a href="https://www.samsung.com/us/computing/galaxy-books/galaxy-book4-series/buy/galaxy-book4-pro-360-16-intel-core-ultra-7-1tb-moonstone-gray-np960qgk-kg1us/?modelCode=NP960QGK-KG1US">
-            <button class="watch-button">
-                <img src="https://image-us.samsung.com/SamsungUS/home/computing/galaxy-books/gp4-16-360-pro/GB4_Pro_360_16_US_Copilot_Moonstone-Gray_001_Front-1600x1200.jpg?$product-card-small-jpg$" alt="Laptop">
-                <h2>Galaxy Book4 Pro 360, 16"</h2>
-                <p style="color: black;">From $1399.99</p>
-            </button>
+        <a href="https://www.samsung.com/us/computing/galaxy-books/galaxy-book4-series/buy/galaxy-book4-pro-360-16-intel-core-ultra-7-1tb-moonstone-gray-np960qgk-kg1us/?modelCode=NP960QGK-KG1US" class="widget-button">
+            <img src="https://image-us.samsung.com/SamsungUS/home/computing/galaxy-books/gp4-16-360-pro/GB4_Pro_360_16_US_Copilot_Moonstone-Gray_001_Front-1600x1200.jpg?$product-card-small-jpg$" alt="Laptop">
+            <h2>Galaxy Book4 Pro 360, 16"</h2>
+            <p style="color: black;">From $1399.99</p>
         </a>
     </div>
-
+    <div style="display:flex; gap: 45px; justify-content: left; margin-top:30px; margin-left: 10px;">
+        <a href="https://www.samsung.com/us/home-appliances/vacuums/jet-stick/samsung-jet--75-cordless-stick-vacuum-vs20t7511t5-aa/" class="widget-button">
+            <img style="mix-blend-mode: multiply; width: 200px; height: 150px;" src="https://image-us.samsung.com/SamsungUS/home/92121/gal/VS20T7511T5_Jet_75_01_Silver_SCOM.jpg?$product-card-small-jpg$">
+            <h2 style="font-size: 15px;">Samsung Jet 75 Cordless Stick <br> Vacuum </h2>
+            <p style="color: blue;"> Save $130</p>
+            <p>From $199.99</p>
+        </a>
+        <a href="https://www.samsung.com/us/smartphones/galaxy-s21/buy/" class="widget-button">
+            <img src="https://image-us.samsung.com/SamsungUS/home/home-appliances/washers/front-load/ww25b6900awa2/gallery-image/WW25B6900AW_01_White_SCOM.jpg?$product-card-small-jpg$" alt="Galaxy S21">
+            <h2>G2.5 cu. ft. Compact Front<br> Load Washer with AI Smart Dial and Super Speed Wash</h2>
+            <p style="color: blue;">Save $200</p>
+            <p style="color: black;small-text">From $899.99</p>
+        </a>
+        <a href="https://www.samsung.com/us/smartphones/galaxy-s21/buy/" class="widget-button">
+            <img src="https://image-us.samsung.com/SamsungUS/home/home-appliances/vacuums/jet-stick/3152023/VS20A9580VW_01_Misty_White_SCOM.jpg?$product-card-small-jpg$" alt="Galaxy S21">
+            <h2>G2.5 cu. ft. Compact Front<br> Load Washer with AI Smart Dial and Super Speed Wash</h2>
+            <p style="color: blue;">Save $200</p>
+            <p style="color: black;small-text:">From $899.99</p>
+        </a>
+    </div>
+    <div class="ad-offer-img">
+        <img src="https://images.samsung.com/is/image/samsung/assets/us/home/06242024/SDSAC-7649_ShopApp_Offer_Banner_DT_1440x350.jpg?$1440_N_JPG$" alt="Offer Banner">
+    </div>
 </body>
 
 </html>
